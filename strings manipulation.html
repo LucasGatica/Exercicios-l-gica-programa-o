@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let clothes = [];
+        clothes.push("casaco","moletom","pijama","cueca","tenis")
+        clothes.pop();
+        console.log(clothes)
+
+        let favcar = {}
+
+        favcar.color="blue";
+        favcar.convertible  = true;
+
+        console.log(favcar)
+
+
+        const vogais = ["a","e","i","o","u"]
+        const vogaisCripto = ["are","enter","imer","ober","uter"]
+        let texto = "ola";
+
+        function cripto(texto){
+            var textoCripto = [];
+            for(var i = 0; i<texto.length;i++){
+                for(var j = 0; j<5;j++){
+                    if(texto.charAt(i)==vogais[j]){
+                        textoCripto[i]=vogaisCripto[j];
+                        console.log(vogaisCripto[j])
+                        break;
+                    }
+                    
+                        textoCripto[i]=texto.charAt(i);
+                    
+                }
+            }
+            
+            console.log(textoCripto.join(''))
+            
+
+        }
+       
+        
+        cripto(texto);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
